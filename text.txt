@@ -1,0 +1,27 @@
+While
+
+let answer = [];
+
+let heplArr = input;
+while (flag) {
+    for (let i = 0; i < heplArr.length; i++){
+        if (Number.isInteger(heplArr(i))) {
+            answer.push()
+        }
+    }
+}
+------------------------------
+Рекурсия
+let mock = [1,2,[3,5,[6,7]]];
+function openArr (arr) {
+    let returnArr = [];
+    for (let i = 0; i < arr.length; i++) {
+        if (Number.isInteger(arr[i])) {
+            returnArr.push(arr[i]);
+        } else {
+            returnArr = returnArr.concat(openArr(arr[i])) 
+        }
+    }
+    return returnArr
+}
+console.log(openArr(mock));
